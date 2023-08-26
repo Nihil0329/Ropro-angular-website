@@ -1,0 +1,38 @@
+
+.navbar a{
+    color: aliceblue;
+}
+.navbar-toggler-icon{
+    background-color: #23A199 !important;
+} 
+h5{
+    color: #23A199;
+}
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-text h2 {
+    font-size: 40px;
+}
+
+.header-text h2 span {
+	padding: 20px 50px;
+}
+
+.header-text h3 span {
+	padding: 15px;
+}
+
+.title{
+    color: #23A199;
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}

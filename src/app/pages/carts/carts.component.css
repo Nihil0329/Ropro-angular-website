@@ -1,0 +1,65 @@
+.bg{
+    background-image: url("../../../assets/img/cart1.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg2{
+    background-image: url("../../../assets/img/bg-black.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.center img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 162px;
+    width: 250px;
+    margin: 20px 0px;
+}
+
+h4,
+h6 {
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: #23A199;
+    border-radius: .25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.center .btn {
+    font-size: 14px !important;
+    margin: 20px !important;
+    font-weight: 400;
+    padding: 12px 72px;
+    border-radius: 3px !important;
+    color:  white;
+    border-color: #23A199;
+    background-color: black;
+
+}
+
+thead{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+tbody{
+    font-family: 'Ubuntu', sans-serif;
+}

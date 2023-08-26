@@ -1,0 +1,29 @@
+<div class="bg">
+    <div>
+        <h3>Products and Services</h3>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="term" placeholder="search">
+    </div>
+<ul>
+    <li *ngFor="let products of product | filter:term  | paginate: { itemsPerPage: 8, currentPage: p }">
+        <a>
+            <img src="{{products.imageUrl}}" alt="">
+            <div class="content">
+                <div class="name">
+                    {{products.name}}
+                </div>
+                <div class="price">
+                    ₹{{products.price}}
+                </div>
+            </div>
+             <button class="btn  btn-primary btn-sm" style=" background-color:black; color:white; border-color:aqua; " (click)=addtocart(products)>Add to cart</button>
+        </a>
+    </li>
+</ul>
+<div class="pagination">
+    <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel="" class="custom-pagination"></pagination-controls>
+</div>  
+</div>
+
+

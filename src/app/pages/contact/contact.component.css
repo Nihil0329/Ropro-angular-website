@@ -1,0 +1,10 @@
+span a{
+    color:#23A199;
+}
+.contact-text{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+.bg{
+    background:repeating-linear-gradient(45deg, #333333 0,#333333 10%, #23A199 0,#23A199 50%) 0 / 20px 20px;
+}

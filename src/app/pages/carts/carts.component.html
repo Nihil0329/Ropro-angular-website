@@ -1,0 +1,72 @@
+<ng-container *ngIf="products.length !=0">
+    <section class="vh-100 bg2">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <p><span class="h2" style="color: #23A199;">Cart</span></p>
+              <div class="container">
+                <div class="card-table">
+                    <div class="cart-product">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of products; let i = index">
+                                    <td>{{i+1}}</td>
+                                    <td><img style="width: 120px;" src="{{item.imageUrl}}" alt=""></td>
+                                    <td style="width: 25%;">{{item.name}}</td>
+                                    <th style="width: 12%;">₹{{item.price}}</th>
+                                    <td>
+                                        <button (click)="removeItem(item)"><i class="fa fa-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+      
+              
+      
+              <div class="card mb-5" style="background-color: black;color: #23A199; font-family: 'Ubuntu', sans-serif;">
+                <div class="card-body p-4">
+      
+                  <div class="float-end" >
+                    <p class="mb-0 me-5 d-flex align-items-center" >
+                      <span class="lead fw-normal" >Grand Total : ₹{{grandTotal}}</span>
+                    </p>
+                  </div>
+      
+                </div>
+              </div>
+      
+              <div class="d-flex justify-content-lg-end gx-4 px-4" style="margin-bottom: 40px;">
+                <button routerLink="/display"  type="button" class="btn btn-dark" style="color:white; background-color:black; border-color:aqua;">Continue shopping</button>
+                <button routerLink="/payment"  type="button" class="btn btn-dark" style="color:white; background-color:black; border-color:aqua;">Proceed to Payment</button>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+</ng-container>
+<ng-container *ngIf="products.length ==0">
+  <section class="vh-100 bg">
+    <div class="container">
+      <div class="center">
+          <img src="../../../assets/img/cart2.png" alt="">
+          <h4>Your cart is empty!</h4>
+          <h6>Add item to it now</h6>
+          <button routerLink="/display" class="btn btn-outlined-light">Shop Now</button>
+      </div>
+  </div>
+  </section>
+</ng-container>

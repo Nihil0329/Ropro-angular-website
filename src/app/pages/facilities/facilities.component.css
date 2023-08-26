@@ -1,0 +1,30 @@
+img{
+    min-height: 50vh;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 0;
+    opacity: 0.8;
+}
+.bgcss{
+    background-image: url('../../../assets/img/blackbox.png');
+    
+}
+.container-fluid{
+    position: relative;
+}
+.left{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    text-align: left;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+  }
+.right{
+    position: absolute;
+    top: 30%;
+    right:3%;
+    text-align: right;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+}

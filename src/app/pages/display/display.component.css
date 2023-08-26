@@ -1,0 +1,85 @@
+.bg{
+    background-image: url("../../../assets/img/display.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div h3{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-weight:bold;
+    font-family: 'Roboto', sans-serif;   
+}
+
+ul li a{
+    
+    height: 30 rem;
+    width: 30 rem;
+    border: 1px solid aqua;
+    margin: 3rem;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    color: black;
+    background-color: white;
+}
+
+ul li a img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+    
+}
+ul li a button{
+    height: 2rem;
+    width: 7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    margin-left: 3.5rem;
+}
+input{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+    border-color: aqua;
+}
+input .placeholder{
+    font-weight: bold;
+    color: black;
+}
+.content{
+    padding: .5rem 1rem;
+    position: relative;
+}
+.pagination{
+    color: black;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.custom-pagination {
+    .pagination .ngx-pagination-page.current {
+        background-color: #ff9d00;
+        color: #fff;
+      }
+  }
+  
